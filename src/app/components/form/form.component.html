@@ -1,0 +1,16 @@
+
+    <div class="container-form">
+        <div class="container-weight">
+            <label for="weight">Peso:</label>
+            <input  type="number" [(ngModel)]="weight" (input)="calculateIMC()">
+        </div>
+        
+        <div class="container-tall">
+            <label for="tall">altura:</label>
+            <input type="number" [(ngModel)]="tall" (input)="calculateIMC()">
+        </div>
+    
+        <p > <strong>IMC</strong>: {{ imc }}</p>
+        <a href="/next"> PRÓXIMA PÁGINA <strong>>></strong> </a>
+    </div>
+

@@ -1,0 +1,15 @@
+.container-menu >ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.container-menu >ul>li{
+    list-style: none;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
