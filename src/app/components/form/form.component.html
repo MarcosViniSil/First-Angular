@@ -7,10 +7,14 @@
         
         <div class="container-tall">
             <label for="tall">altura:</label>
-            <input type="number" [(ngModel)]="tall" (input)="calculateIMC()">
+            <input type="number"  [(ngModel)]="tall" (input)="calculateIMC()">
         </div>
     
         <p > <strong>IMC</strong>: {{ imc }}</p>
-        <a href="/next"> PRÓXIMA PÁGINA <strong>>></strong> </a>
+        <a   [routerLink]="['next']"> PRÓXIMA PÁGINA <strong>>></strong> </a>
+        <nav>
+            <a class="button" routerLink="/">Crisis Center</a> |
+            <a class="button" routerLink="/next">Heroes</a>
+          </nav>
     </div>
 
